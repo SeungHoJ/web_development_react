@@ -23,7 +23,8 @@ import ReactDOM from 'react-dom/client'
 // import MyTable from './MyTable'
 // import MyForm from './MyForm'
 // import MyForm2 from './MyForm2'
-import MyForm3 from './MyFom3'
+// import MyForm3 from './MyFom3'
+import MyForm from './MyForm4'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -43,6 +44,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <MyTable /> */}
     {/* <MyForm /> */}
     {/* <MyForm2 /> */}
-    <MyForm3 />
+    <MyForm />
   </React.StrictMode>,  
 )
