@@ -6,7 +6,10 @@ function App() {
   const handleChange = (event:React.ChangeEvent<HTMLInputElement>) => {
     setName(event.target.value)
   }
-  const handleSubmit = (event:React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event:React.FormEvent<HTMLFormElement>
+
+    
+  ) => {
     event.preventDefault();
     alert(`hello, ${name}`)
 
