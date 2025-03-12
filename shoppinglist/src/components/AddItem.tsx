@@ -37,7 +37,6 @@ function AddItem(props: AddItemProps){
     })
     
     handleClose();
-    alert(`품목 : ${item.product}`)
     
   }
 
