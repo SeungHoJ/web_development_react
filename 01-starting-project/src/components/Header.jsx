@@ -1,16 +1,16 @@
-
+import reactImg from "../assets/react-core-concepts.png"
 const reactDescriptionsKor = ['근본적인', '결정적인','핵심적인'];
-const reactDescriptionsEng = ['Fundamental', 'Crucial','Core']
+const reactDescriptionsEng = ['Fundamental', 'Crucial','Core','Hello']
 
 function getRandomInt(max){
   return Math.floor(Math.random() *  (max + 1));
 }
 
 function Header(){
-  const num = 2;
+  const num = reactDescriptionsEng.length-1;
   return(
     <header>
-        <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
+        <img src={reactImg} alt="Stylized atom" />
         <h1>React 필수 요소 복습</h1>
         <p>
           {reactDescriptionsEng[getRandomInt(num)]} React concepts you will need for almost any app you are
