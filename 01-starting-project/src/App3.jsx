@@ -1,9 +1,22 @@
 import Header from "./components/Header/Header2.jsx";
-import  { CORE_CONCEPTS } from './data.js'
+import  { CORE_CONCEPTS, EXAMPLES } from './data.js'
 import CoreConcepts from "./components/CoreConcepts.jsx"
 import TabButton from "./components/TabButton.jsx";
+import { useState } from "react";
 
 function App() {
+
+  const [selectedTopic,setSelectedTopic] = useState('');
+
+    function handleSelect(selectedTopic) {
+      console.log(selectedTopic);
+    return(
+      <>
+      
+      </>
+    );
+  }
+
   return (
     <div>
       <Header />
@@ -20,14 +33,14 @@ function App() {
         </ul>
         <h2>예시들</h2>
         <menu>
-          {/* <TabButton>Components</TabButton>
-          <TabButton>Components</TabButton>
-          <TabButton>Components</TabButton>
-          <TabButton>Components</TabButton>  */}
-          <TabButton label='Components' />
+          {/* <TabButton label='Components' />
           <TabButton label='Jsx' />
           <TabButton label='Props' />
-          <TabButton label='State' />
+          <TabButton label='State' /> */}
+          <TabButton onSelect={handleSelect('안녕')}>Components</TabButton>
+          <TabButton>Jsx</TabButton>
+          <TabButton>Props</TabButton>
+          <TabButton>State</TabButton>
         </menu>
         동적인 버튼 클릭의 결과물
         </section>
