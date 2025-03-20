@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { KpopContext } from "../context/Context";
 
-function Button(children){
+function Button({children}){
   const {data,setPalylist} = useContext(KpopContext);
 
   let result = [...data];

@@ -35,13 +35,13 @@ const data = [
 
 const KpopContext = createContext();
 
-const KpopContextProvider = (children) => {
+const KpopContextProvider = ({children}) => {
   const [playlist, setPlayList] = useState(data);
 
   return(
-    <KpopContextProvider value={{data,playlist,setPlayList}}>
+    <KpopContext.Provider value={{data,playlist,setPlayList}}>
       {children}
-    </KpopContextProvider>
+    </KpopContext.Provider>
   )
 }
 
