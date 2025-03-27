@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 
-function Movie({key,coverImage,title,summary,genres}){
+function Movie({id,coverImage,title,summary,genres}){
   
   return (
-    <div key={key}>
-            <h2>{title}</h2>
+    <div>
+            <h2>
+              <Link to={`/movie/${id}`}>{title}</Link>
+            </h2>
             <img src={coverImage} alt={title} />
             <p>{summary}</p>
             <ul>  
